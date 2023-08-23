@@ -11182,7 +11182,7 @@ addcmd('chatlogs',{'clogs'},function(args, speaker)
 	logs:TweenPosition(UDim2.new(0, 0, 1, -265), "InOut", "Quart", 0.3, true, nil)
 end)
 addcmd('ugc',{},function(args, speaker)
-	loadstring(game:HttpGet(('https://raw.githubusercontent.com/JustAP1ayer/PlayerHubOther/main/autougcgamesniper.lua')))() 
+	loadstring(game:HttpGet(('https://raw.githubusercontent.com/JustAP1ayer/PlayerHubOther/main/PlayerHubIngameUgcLimiteds.lua')))() 
 end)
 addcmd('joinlogs',{'jlogs'},function(args, speaker)
 	chat.Visible = false
