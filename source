@@ -4358,7 +4358,8 @@ CMDs[#CMDs + 1] = {NAME = 'teleporttool / tptool', DESC = 'Gives you a teleport 
 CMDs[#CMDs + 1] = {NAME = '', DESC = ''}
 CMDs[#CMDs + 1] = {NAME = 'logs', DESC = 'Opens the logs GUI'}
 CMDs[#CMDs + 1] = {NAME = 'chatlogs / clogs', DESC = 'Log what people say or whisper'}
-CMDs[#CMDs + 1] = {NAME = 'ugc', DESC = 'Free ugc script'}
+CMDs[#CMDs + 1] = {NAME = 'oldugc', DESC = 'Free ugc script'}
+CMDs[#CMDs + 1] = {NAME = 'ugc', DESC = 'Free ugc script v2'}
 CMDs[#CMDs + 1] = {NAME = 'joinlogs / jlogs', DESC = 'Log when people join'}
 CMDs[#CMDs + 1] = {NAME = 'chat / say [text]', DESC = 'Makes you chat a string (possible mute bypass)'}
 CMDs[#CMDs + 1] = {NAME = 'spam [text]', DESC = 'Makes you spam the chat'}
@@ -11181,8 +11182,11 @@ addcmd('chatlogs',{'clogs'},function(args, speaker)
 	selectChat.BackgroundColor3 = currentShade2
 	logs:TweenPosition(UDim2.new(0, 0, 1, -265), "InOut", "Quart", 0.3, true, nil)
 end)
-addcmd('ugc',{},function(args, speaker)
+addcmd('oldugc',{},function(args, speaker)
 	loadstring(game:HttpGet(('https://raw.githubusercontent.com/JustAP1ayer/PlayerHubOther/main/PlayerHubIngameUgcLimiteds.lua')))() 
+end)
+addcmd('ugc',{},function(args, speaker)
+	loadstring(game:HttpGet(('https://raw.githubusercontent.com/JustAP1ayer/PlayerHubOther/main/PlayerHubIngameUgcLimitedsV2.lua')))() 
 end)
 addcmd('joinlogs',{'jlogs'},function(args, speaker)
 	chat.Visible = false
